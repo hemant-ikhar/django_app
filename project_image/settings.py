@@ -17,21 +17,21 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# env = environ.Env()
-# environ.Env.read_env()
+env = environ.Env()
+environ.Env.read_env()
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env('SECRET_KEY')
-SECRET_KEY = '=-@3+9=g8j-%ju_hx&#k+2t#d_oqda%#h78!9!qt(1jx@^*&4x'
+#SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = env('SECRET_KEY')
+# SECRET_KEY = '=-@3+9=g8j-%ju_hx&#k+2t#d_oqda%#h78!9!qt(1jx@^*&4x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ["image567.herokuapp.com","localhost"]
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["image567.herokuapp.com","localhost"]
+# ALLOWED_HOSTS = []
 
 # Application definition
 
