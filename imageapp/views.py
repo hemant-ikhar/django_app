@@ -8,8 +8,8 @@ def imageView(request):
         name = formdata.get('nm')
         email = formdata.get('em')
         age = formdata.get('ag')
-        img = Image(name = name,email = email, age = age)
+        img = Image(name=name, email=email, age=age)
         img.save()
-    return render(request,template_name='index.html')
+    return render(request,'index.html')
 
 
